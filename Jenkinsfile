@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage("clone"){
       steps{
-        git url: "https://github.com/bvsaikr/Blog-Portal-Frontend", branch: "main"
+        git url: "https://github.com/bvsaikr/Blog-Portal-Frontend.git", branch: "main"
       }
     }
     stage("unittest"){
