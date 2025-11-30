@@ -5,6 +5,6 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-FROM nginx:stable-alpine
+FROM nginx:alpine-slim
 COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 80
